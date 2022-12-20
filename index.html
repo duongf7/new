@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        margin: 20px 20px;
+        padding: 20px 20px;
+        border: 2px solid #000;
+      }
+      .flex {
+        display: flex;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .grow-1 {
+        flex-grow: 1;
+      }
+      @media (min-width: 987px) {
+        .a {
+          color: red;
+        }
+      }
+      @media (min-width: 576px) {
+        .a {
+          color: yellow;
+        }
+      }
+      @media (max-width: 575px) {
+        .a {
+          color: rgb(0, 255, 140);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <p style=""></p>
+    <div class="a">hello world</div>
+    <div red class="flex">
+      <div class="grow-1">a</div>
+      <div class="grow-1">b</div>
+      <div class="grow-1">c</div>
+    </div>
+    <div green class="flex">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+    </div>
+  </body>
+</html>
